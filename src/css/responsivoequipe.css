@@ -1,0 +1,43 @@
+@media(max-width: 750px) {
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu {
+        justify-content: center;
+        align-items: center;
+        font-size: 90%;
+        right: 0px;
+    }
+
+    .icone-ironhide {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        padding: 0px;
+    }
+
+    .cartao {
+        margin-bottom: 0px;
+    }
+
+    .corpo-equipe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .listagem .integrante {
+        width: 45%;
+        margin-bottom: 0;
+        border-radius: 8px;
+    }
+
+    .listagem ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px
+    }
+
+}

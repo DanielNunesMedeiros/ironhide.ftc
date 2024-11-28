@@ -1,0 +1,160 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    text-align: center;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    justify-content: right;
+    gap: 35px;
+}
+
+.menu-formatacao {
+    list-style-type: none;
+}
+
+.menu-formatacao-item-ativo {
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-bottom-color: #2dff00;
+    border-bottom-width: 5px;
+}
+
+.menu-formatacao-item {
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+ul#menu-navegacao li a:hover {
+    background-color: #2dff00;
+}
+
+.icone-ironhide {
+    display: flex;
+    position: absolute;
+    left: 25px;
+    top: 30px;
+}
+
+.escudo {
+    margin-top: -28px;
+    margin-right: -10px;
+}
+
+.numero-da-equipe {
+    color: #2dff00;
+}
+
+.tit-subt div {
+    font-size: 250%;
+    padding: 100px;
+}
+
+.projeto-social {
+    display: flex;
+    background-color: #ffffff;
+    color: black;
+    justify-content: center;
+    padding: 25px;
+    gap: 50px;
+    border-radius: 15px;
+    width: 1015px;
+    margin: auto;
+    position: relative;
+    top: -995px;
+}
+
+.projeto-social h2 {
+    text-align: left;
+}
+
+.projeto-social .c {
+    margin-bottom: 150px;
+}
+
+.projeto-social a {
+    text-decoration: none;
+}
+
+.projeto-social .confira-aqui {
+    background-color: #136e00;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    border-radius: 50px;
+    font-size: 60%;
+    cursor: pointer;
+}
+
+.projeto-social .confira-aqui:hover {
+    transform: scale(1.05);
+}
+
+.conteudo-principal {
+    background-color: #136e00;
+    text-align: justify;
+    font-size: 90%;
+    padding: 25px;
+    width: 100vw;
+    margin-top: 150px;
+    box-sizing: border-box;
+}
+
+.texto-informacional {
+    font-size: 120%;
+    width: 1230px;
+    margin: auto;
+    padding: 175px 50px 35px;
+}
+
+.texto-informacional p {
+    margin-bottom: 15px;
+}
+
+.conteudo {
+    background-color: #ffffff;
+    color: black;
+    width: 1015px;
+    display: flex;
+    padding: 25px 0 0 25px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.conteudo .conheca-a-ftc {
+    justify-items: center;
+}
+
+.conteudo .pergunta {
+    margin-bottom: 25px;
+}
+
+.conteudo .desafio {
+    justify-items: center;
+}
+
+.conteudo iframe {
+    scale: 80%;
+}
+
+.contatos-da-equipe {
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    display: flex;
+    margin: -345px 0 -100px 0;
+}
