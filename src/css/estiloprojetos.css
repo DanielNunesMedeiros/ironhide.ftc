@@ -1,16 +1,17 @@
 body {
     font-family: "Montserrat", sans-serif;
-    background-position: center;
-    background-color: black;
+    background-color: #36aa3f;
     text-align: center;
     color: #ffffff;
-    overflow-x: hidden;
 }
 
 main {
-    margin-top: -65px;
     justify-content: center;
     align-items: center;
+}
+
+.background {
+    width: 100%;
 }
 
 .menu {
@@ -31,7 +32,7 @@ main {
     padding: 10px 10px;
     text-decoration: none;
     border-bottom-style: solid;
-    border-bottom-color: #2dff00;
+    border-bottom-color: #36aa3f;
     border-bottom-width: 5px;
 }
 
@@ -42,7 +43,7 @@ main {
 }
 
 ul#menu-navegacao li a:hover {
-    background-color: #2dff00;
+    background-color: #36aa3f;
 }
 
 .icone-ironhide {
@@ -58,30 +59,12 @@ ul#menu-navegacao li a:hover {
 }
 
 .numero-da-equipe {
-    color: #2dff00;
-}
-
-.title {
-    font-size: 120%;
-    justify-content: center;
-    margin-bottom: -50px;
-}
-
-.corpo-equipe {
-    gap: 125px;
-    margin-top: 150px;
-}
-
-.corpo {
-    padding: 150px;
-    gap: 50px;
-    display: flex;
+    color: #36aa3f;
 }
 
 .cartao {
     display: none;
     border-radius: 10px;
-    margin-bottom: -80px;
 }
 
 .cartao.aberto {
@@ -101,7 +84,9 @@ ul#menu-navegacao li a:hover {
     text-align: justify;
     justify-content: center;
     padding: 50px 30px;
-    border-radius: 10px;
+    border-radius: 10px;    
+    width: 60vw;
+    margin: auto;
 }
 
 .cartao .cartao-informacoes h3 {
@@ -111,109 +96,18 @@ ul#menu-navegacao li a:hover {
 }
 
 .p1 {
-    margin-bottom: 30px;
     display: flex;
+    gap: 25px;
 }
 
-.p2 {
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-}
-
-.arduino {
-    margin: -50px 0 0 35px;
-}
-
-.protoboard {
-    scale: 50%;
-    margin: -50px -135px -50px -110px;
-}
-
-.esp32 {
-    margin-left: 25px;
-}
-
-.garrafa {
-    margin-right: -25px;
-}
-
-.imagens1 {
-    margin: auto;
-    padding-top: 15px;
-}
-
-.imagens1 img {
-    padding: 5px;
-    border-radius: 15px;
-}
-
-.imagens2 {
-    margin: auto;
-    padding-top: 15px;
-}
-
-.imagens2 img {
-    padding: 5px;
-    border-radius: 15px;
-    margin-bottom: -40px;
-}
-
-
-.tipo-tecnico {
-    background-color: #136e00
-}
-
-.tipo-engenheiro {
-    background-color: #136e00
-}
-
-.tipo-programador {
-    background-color: #136e00
-}
-
-.listagem {
-    max-width: 200px;
-}
-
-.listagem .integrante {
-    background-color: #136e00;
-    color: #ffffff;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 5px;
-    margin-bottom: 5px;
-    cursor: pointer;
+.p1 img {
     border-radius: 10px;
-    min-height: 55px;
-
-    transition: 0.15 ease-in-out;
-}
-
-.listagem .integrante:hover {
-    transform: scale(1.05);
-}
-
-.listagem .integrante span {
-    margin: 10px;
-}
-
-.listagem .integrante.ativo {
-    background-color: #ffffff;
-    color: black;
 }
 
 .contatos-da-equipe {
-    background-color: #136e00;
+    background-color: #36aa3f;
     justify-content: center;
     align-items: center;
-    position: relative;
-    bottom: -15px;
     gap: 25px;
     display: flex;
-    width: 100vw;
-    margin: auto;
-    box-sizing: border-box;
 }

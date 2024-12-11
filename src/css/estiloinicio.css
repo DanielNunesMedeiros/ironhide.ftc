@@ -29,7 +29,7 @@ main {
     padding: 10px 10px;
     text-decoration: none;
     border-bottom-style: solid;
-    border-bottom-color: #2dff00;
+    border-bottom-color: #36aa3f;
     border-bottom-width: 5px;
 }
 
@@ -40,7 +40,7 @@ main {
 }
 
 ul#menu-navegacao li a:hover {
-    background-color: #2dff00;
+    background-color: #36aa3f;
 }
 
 .icone-ironhide {
@@ -56,79 +56,40 @@ ul#menu-navegacao li a:hover {
 }
 
 .numero-da-equipe {
-    color: #2dff00;
+    color: #36aa3f;
 }
 
-.tit-subt div {
-    font-size: 250%;
-    padding: 100px;
-}
-
-.projeto-social {
-    display: flex;
-    background-color: #ffffff;
-    color: black;
-    justify-content: center;
-    padding: 25px;
-    gap: 50px;
-    border-radius: 15px;
-    width: 1015px;
-    margin: auto;
-    position: relative;
-    top: -995px;
-}
-
-.projeto-social h2 {
-    text-align: left;
-}
-
-.projeto-social .c {
-    margin-bottom: 150px;
-}
-
-.projeto-social a {
-    text-decoration: none;
-}
-
-.projeto-social .confira-aqui {
-    background-color: #136e00;
-    padding: 15px;
-    text-align: center;
-    width: 200px;
-    border-radius: 50px;
-    font-size: 60%;
-    cursor: pointer;
-}
-
-.projeto-social .confira-aqui:hover {
-    transform: scale(1.05);
+.equipe {
+    width: 100%;
 }
 
 .conteudo-principal {
-    background-color: #136e00;
+    justify-items: center;
     text-align: justify;
     font-size: 90%;
-    padding: 25px;
-    width: 100vw;
-    margin-top: 150px;
-    box-sizing: border-box;
+    margin-top: -10vh;
+    margin-bottom: 10vh;
 }
 
 .texto-informacional {
+    justify-items: center;
     font-size: 120%;
-    width: 1230px;
-    margin: auto;
-    padding: 175px 50px 35px;
+    width: 90vw;
+    margin-bottom: 10vh;
 }
 
 .texto-informacional p {
     margin-bottom: 15px;
 }
 
+.texto-informacional h1 {
+    margin-bottom: 2.5vh;
+}
+
 .conteudo {
     background-color: #ffffff;
     color: black;
-    width: 1015px;
+    width: 73%;
     display: flex;
     padding: 25px 0 0 25px;
     border-radius: 15px;
@@ -151,10 +112,82 @@ ul#menu-navegacao li a:hover {
     scale: 80%;
 }
 
+.back-green {
+    width: 100%;
+    margin-bottom: -12.5vh;
+}
+
+.sobre-a-equipe {
+    background-color: #36aa3f;
+    display: flex;
+    font-size: 120%;
+    width: 100vw;
+    margin: auto;
+    gap: 5vw;
+    padding: 5vw;
+}
+
+.sobre-a-equipe img {
+    border-radius: 10px;
+}
+
+.texto-equipe {
+    justify-items: center;
+}
+
+.texto-equipe h1 {
+    margin-bottom: 5vh;
+}
+
+.projeto-fundo {
+    background-color: #36aa3f;
+}
+
+.projeto-social {
+    display: flex;
+    background-color: #ffffff;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 50px;
+    border-radius: 15px;
+    width: 73%;
+    margin: auto;
+}
+
+.projeto-social a {
+    text-decoration: none;
+}
+
+.conheca-o-projeto {
+    justify-items: center;
+}
+
+.conheca-o-projeto .c {
+    margin-bottom: 2vh;
+}
+
+.confira-aqui {
+    background-color: #36aa3f;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    border-radius: 50px;
+    font-size: 60%;
+    cursor: pointer;
+    margin: auto;
+}
+
+.confira-aqui:hover {
+    transform: scale(1.05);
+}
+
 .contatos-da-equipe {
+    background-color: #36aa3f;
     justify-content: center;
     align-items: center;
     gap: 25px;
     display: flex;
-    margin: -345px 0 -100px 0;
+    margin-top: -10vh;
 }
