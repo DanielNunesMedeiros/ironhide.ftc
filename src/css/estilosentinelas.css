@@ -1,6 +1,6 @@
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: #36aa3f;
+    background-color: black;
     text-align: center;
     color: #ffffff;
     overflow-x: hidden;
@@ -59,8 +59,17 @@ ul#menu-navegacao li a:hover {
     color: #36aa3f;
 }
 
-.background {
-    width: 100%;
+.title {
+    font-size: 120%;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+.corpo {
+    gap: 5vw;
+    padding: 50px;
+    display: flex;
+    margin: auto;
 }
 
 .cartao {
@@ -70,60 +79,130 @@ ul#menu-navegacao li a:hover {
 
 .cartao.aberto {
     display: block;
-    padding-bottom: 3vh;
+}
+
+.cartao .cartao-topo {
+    padding: 30px;
+    justify-items: left;
 }
 
 .cartao .cartao-informacoes {
     background-color: #ffffff;
     color: black;
     display: flex;
-    gap: 1vw;
+    flex-direction: column;
     text-align: justify;
     justify-content: center;
-    padding: 4vh 1.5vw;
-    border-radius: 10px;
-    width: 60vw;
-    margin: auto;
-}
-
-.cartao .cartao-informacoes img{
+    padding: 5vh 1.5vw;
     border-radius: 10px;
 }
 
 .cartao .cartao-informacoes h3 {
     font-size: 20px;
-    margin-bottom: 1.5vh;
+    margin-bottom: 1.2vh;
     border-bottom: 1px solid #6b727a;
 }
 
 .p1 {
+    margin-bottom: 7vh;
+    display: flex;
+}
+
+.p2 {
     display: flex;
     flex-direction: column;
-    gap: 1vh;
 }
 
-.confira-aqui {
-    background-color: #36aa3f;
-    padding: 15px;
-    text-align: center;
-    width: 12.5vw;
-    border-radius: 50px;
-    cursor: pointer;
+.acao {
+    margin-bottom: -7vh;
+}
+
+.arduino {
+    margin: -5vh 0 0 3vw;
+}
+
+.protoboard {
+    scale: 50%;
+    margin: -50px -135px -50px -110px;
+}
+
+.esp32 {
+    margin-left: 25px;
+}
+
+.garrafa {
+    margin-right: -25px;
+}
+
+.imagens1 {
     margin: auto;
+    padding-top: 15px;
 }
 
-.confira-aqui:hover {
+.imagens1 img {
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.imagens2 {
+    margin: auto;
+    padding-top: 15px;
+}
+
+.imagens2 img {
+    padding: 5px;
+    border-radius: 15px;
+    margin-bottom: -40px;
+}
+
+.tipo-tecnico {
+    background-color: #36aa3f;
+}
+
+.tipo-engenheiro {
+    background-color: #36aa3f;
+}
+
+.tipo-programador {
+    background-color: #36aa3f;
+}
+
+.listagem {
+    max-width: 200px;
+}
+
+.listagem .integrante {
+    background-color: #36aa3f;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    min-height: 55px;
+    transition: 0.15 ease-in-out;
+}
+
+.listagem .integrante:hover {
     transform: scale(1.05);
 }
 
-.confira-aqui a {
-    text-decoration: none;
+.listagem .integrante span {
+    margin: 10px;
+}
+
+.listagem .integrante.ativo {
+    background-color: #ffffff;
+    color: black;
 }
 
 .contatos-da-equipe {
-    background-color: #36aa3f;
     justify-content: center;
     align-items: center;
-    gap: 2vw;
+    gap: 25px;
     display: flex;
+    margin: auto;
+    box-sizing: border-box;
 }
