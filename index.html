@@ -23,9 +23,11 @@
 <body>
 
   <main class="inicio">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+
     <div class="corpo-inicio">
 
-      <img class="equipe" src="./src/imagens/equipe.jpeg">
+      <img class="background" src="./src/imagens/back-inicio.jpeg">
 
       <nav>
         <ul id="menu-navegacao" class="menu" class="menu-formatacao">
@@ -34,8 +36,8 @@
           </li>
           <li class="menu-item"><a href="equipe.html" class="menu-formatacao-item" style="color: #ffffff;">EQUIPE</a>
           </li>
-          <li class="menu-item"><a href="projetos.html" class="menu-formatacao-item"
-              style="color: #ffffff;">PROJETOS</a>
+          <li class="menu-item"><a href="conexões.html" class="menu-formatacao-item"
+              style="color: #ffffff;">CONEXÕES</a>
           </li>
         </ul>
       </nav>
@@ -49,7 +51,7 @@
         <div class="texto-informacional">
           <h1><span style="color: #36aa3f;">STEEL MINDS, IRON HEARTS</span></h1>
           <p>
-          <h3>Seja bem-vindo(a) ao site da IRONHIDE, Aqui você irá conhecer
+          <h3>Seja bem-vindo(a) ao site da IRONHIDE. Aqui você irá conhecer
             nossa <a style="color: #36aa3f;" href="equipe.html">equipe</a> e os trabalhos que estamos realizando, além
             disso,
             você pode acompanhar nosso progresso como equipe nas áreas da
@@ -60,7 +62,7 @@
           <p>
           <h3>Este site é um de nossos projetos, você pode conferir todos no nosso <a style="color: #36aa3f;"
               href="https://www.instagram.com/ironhide.ftc/">instagram</a> ou na aba <a style="color: #36aa3f;"
-              href="./projetos.html">projetos</a> no canto superior direito. Nos siga e fique à vontade para explorar!
+              href="./conexões.html">conexões</a> no canto superior direito. Nos siga e fique à vontade para explorar!
           </h3>
           </p>
         </div>
@@ -99,27 +101,35 @@
             <img src="./src/imagens/equipe2.jpeg" height="350vh">
             <div class="texto-equipe">
               <h1><span style="color: black;">IRONHIDE #26956</span></h1>
-              <h3>A IRONHIDE é a primeira equipe de FTC do SESI SENAI Roberto Proença de Macêdo (Fortaleza-CE), nossa
-                missão é nos tornarmos uma equipe <span style="color: black;">inovadora e inspiradora,</span>
+              <h3>A IRONHIDE é a primeira equipe de FTC do SESI SENAI Roberto Proença de Macêdo (Fortaleza-CE), nosso
+                objetivo é nos transformar em uma equipe <span style="color: black;">inovadora e inspiradora,</span>
                 destacando-nos entre as principais equipes de robótica do país. Inspirados pelos valores da FIRST,
                 buscamos revelar a grandiosidade de seus <span style="color: black;">princípios</span>
                 e <span style="color: black;">transmitir o universo da robótica</span> para a maior quantidade de
-                pessoas possível. Temos o objetivo de explorar e transmitir todas as experiências que a robótica tem a
+                pessoas possíveis. Temos o objetivo de explorar e transmitir todas as experiências que a robótica tem a
                 oferecer para os mais diversos meios sociais, visando sempre <span style="color: black;">impulsionar a
-                  tecnologia e os projetos
-                  sociais na nossa comunidade.</span></h3>
+                tecnologia e os projetos sociais na nossa comunidade.</span> Atualmente, a equipe possui 1 técnica e 7 membros, todos
+                bolsistas e, sendo 3 deles de Cascavel-CE. Conheça-nos na aba <a href="./equipe.html" style="color: black;">equipe.</a></h3>
             </div>
           </div>
           <div class="projetos-back">
             <div class="projetos">
-              <img src="./src/imagens/tinker-co2.png" height="300vh">
-              <h2 class="conheca-o-projeto">
-                <p>CONHEÇA NOSSOS</p>
-                <p class="c"><span style="color: #36aa3f;">PROJETOS</span></p>
-                <p class="confira-aqui"><a style="color: #ffffff" href="projetos.html">CONFIRA AQUI</a></p>
-              </h2>
+              <div class="carousel">
+                <button class="prev" aria-label="Anterior">&#10094;</button>
+                <img id="carousel-img" src="./src/imagens/tinker-co2.png" height="270vh" alt="Projeto">
+                <button class="next" aria-label="Próximo">&#10095;</button>
+              </div>
+              <div class="conheca-o-projeto">
+                <h3>
+                  <p>CONHEÇA NOSSOS <span style="color: #36aa3f;">PROJETOS</span> E <span style="color: #36aa3f;">EVENTOS</span></p>
+                </h3>
+                <h2>
+                  <p class="confira-aqui"><a style="color: #ffffff" href="conexões.html">CONFIRA AQUI</a></p>
+                </h2>
+              </div>
             </div>
           </div>
+                   
         </div>
       </div>
 
@@ -130,6 +140,9 @@
     </div>
 
   </main>
+
+  <script src="./src/js/scroll.js"></script>
+  <script src="./src/js/carousel.js"></script>
 </body>
 
 </html>

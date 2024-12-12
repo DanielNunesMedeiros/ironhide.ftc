@@ -11,6 +11,26 @@ main {
     align-items: center;
 }
 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
 .menu {
     display: flex;
     position: absolute;
@@ -59,7 +79,7 @@ ul#menu-navegacao li a:hover {
     color: #36aa3f;
 }
 
-.equipe {
+.background {
     width: 100%;
 }
 
@@ -111,6 +131,9 @@ ul#menu-navegacao li a:hover {
 
 .conteudo iframe {
     scale: 80%;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .back-green {
@@ -130,6 +153,8 @@ ul#menu-navegacao li a:hover {
 
 .sobre-a-equipe img {
     border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .texto-equipe {
@@ -150,12 +175,60 @@ ul#menu-navegacao li a:hover {
     color: black;
     justify-content: center;
     align-items: center;
-    padding: 25px;
-    gap: 5vh;
+    padding: 15px;
+    gap: 2.5vw;
     border-radius: 15px;
-    width: 65vw;
+    width: 57.5vw;
     margin: auto;
 }
+
+.carousel {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 25px;
+}
+
+.carousel img {
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+    opacity: 1;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    font-size: 24px;
+}
+
+button.prev {
+    left: -30px;
+}
+
+button.next {
+    right: -30px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 
 .projetos a {
     text-decoration: none;
@@ -165,8 +238,12 @@ ul#menu-navegacao li a:hover {
     justify-items: center;
 }
 
-.conheca-o-projeto .c {
-    margin-bottom: 2vh;
+.conheca-o-projeto p {
+    text-align: center;
+}
+
+.conheca-o-projeto h3 {
+    margin-bottom: 2.5vh;
 }
 
 .confira-aqui {

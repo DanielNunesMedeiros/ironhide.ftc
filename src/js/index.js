@@ -1,10 +1,10 @@
-const listaSelecaoIntegrante = document.querySelectorAll(".integrante");
+const listaSelecaoIntegrante = document.querySelectorAll(".item");
 
-listaSelecaoIntegrante.forEach(integrante => {
-    integrante.addEventListener("click", () => {
+listaSelecaoIntegrante.forEach(item => {
+    item.addEventListener("click", () => {
         desativarCartaoIntegrante();
 
-        const idIntegranteSelecionado = ativarCartaoIntegrante(integrante);
+        const idIntegranteSelecionado = ativarCartaoIntegrante(item);
 
         desativarIntegranteNaListagem();
         ativarIntegranteNaListagem(idIntegranteSelecionado);
@@ -22,8 +22,8 @@ function desativarIntegranteNaListagem() {
     integranteAtivoNaListagem.classList.remove("ativo");
 }
 
-function ativarCartaoIntegrante(integrante) {
-    const idIntegranteSelecionado = integrante.attributes.id.value;
+function ativarCartaoIntegrante(item) {
+    const idIntegranteSelecionado = item.attributes.id.value;
     const idDoCartaoIntegranteParaAbrir = "cartao-" + idIntegranteSelecionado;
     const cartaoIntegranteParaAbrir = document.getElementById(idDoCartaoIntegranteParaAbrir);
     cartaoIntegranteParaAbrir.classList.add("aberto");

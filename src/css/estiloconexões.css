@@ -1,6 +1,6 @@
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: black;
+    background-color: #36aa3f;
     text-align: center;
     color: #ffffff;
     overflow-x: hidden;
@@ -26,7 +26,7 @@ main {
     border-radius: 10px;
     font-size: 18px;
 }
-  
+
 #myBtn:hover {
     background-color: #555;
 }
@@ -79,146 +79,96 @@ ul#menu-navegacao li a:hover {
     color: #36aa3f;
 }
 
-.title {
-    font-size: 120%;
-    justify-content: center;
-    padding-top: 10vh;
+.background {
+    width: 100%;
 }
 
-.corpo {
-    gap: 5vw;
-    padding: 50px;
-    display: flex;
-    margin: auto;
+.conheca {
+    margin-top: -65vh;
+    margin-bottom: 15vh;
 }
 
 .cartao {
     display: none;
     border-radius: 10px;
-    background-color: #36aa3f;
+}
+
+.div-flex {
+    display: flex;
+    padding: 0 50px 0 50px;
+    gap: 3vw;
 }
 
 .cartao.aberto {
     display: block;
-}
-
-.cartao .cartao-topo {
-    padding: 30px;
-    justify-items: left;
+    padding-bottom: 3vh;
 }
 
 .cartao .cartao-informacoes {
     background-color: #ffffff;
     color: black;
     display: flex;
-    flex-direction: column;
+    gap: 1vw;
     text-align: justify;
     justify-content: center;
-    padding: 5vh 1.5vw;
+    align-items: center;
+    padding: 4vh 1.5vw;
     border-radius: 10px;
+    width: 60vw;
+    height: 50vh;
+    margin: auto;
+}
+
+.slideshow-container img {
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slideshow-container img.active {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .cartao .cartao-informacoes h3 {
     font-size: 20px;
-    margin-bottom: 1.2vh;
+    margin-bottom: 1.5vh;
     border-bottom: 1px solid #6b727a;
 }
 
 .p1 {
-    margin-bottom: 7vh;
-    display: flex;
-    gap: 2.5vw;
-}
-
-.texto-fim {
-    margin-bottom: -7vh;
-}
-
-.arduino {
-    margin-left: -0.2vw;
-}
-
-.ph {
-    margin-left: 0.35vw;
-}
-
-.co2 {
-    margin-left: -1.45vw;
-}
-
-.esp32 {
-    scale: 75%;
-    margin-right: -2vw;
-    margin-left: -0.8vw;
-}
-
-.garrafa {
-    margin-bottom: -7vh;
-}
-
-.p2 {
     display: flex;
     flex-direction: column;
+    gap: 1vh;
 }
 
-.imagens1 {
-    margin: auto;
-    padding: 15px;
-}
-
-.imagens1 img {
-    padding: 5px;
-    border-radius: 15px;
-    border: 2px solid black;
-}
-
-.imagens2 {
-    margin: auto;
-    padding: 15px;
-}
-
-.imagens2 img {
-    padding: 5px;
-    border-radius: 15px;
-    border: 2px solid black;
-}
-
-.listagem {
-    max-width: 200px;
-}
-
-.listagem .item {
+.confira-aqui {
     background-color: #36aa3f;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 5px;
-    margin-bottom: 5px;
+    padding: 15px;
+    text-align: center;
+    width: 12.5vw;
+    border-radius: 50px;
     cursor: pointer;
-    border-radius: 10px;
-    min-height: 55px;
-    transition: 0.15 ease-in-out;
+    margin: auto;
 }
 
-.listagem .item:hover {
+.confira-aqui:hover {
     transform: scale(1.05);
 }
 
-.listagem .item span {
-    margin: 10px;
-}
-
-.listagem .item.ativo {
-    background-color: #ffffff;
-    color: black;
+.confira-aqui a {
+    text-decoration: none;
 }
 
 .contatos-da-equipe {
+    background-color: #36aa3f;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 2vw;
     display: flex;
-    margin: auto;
-    box-sizing: border-box;
 }

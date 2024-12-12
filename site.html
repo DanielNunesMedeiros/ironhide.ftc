@@ -23,6 +23,7 @@
 <body>
 
     <main>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
 
         <nav>
             <ul id="menu-navegacao" class="menu" class="menu-formatacao">
@@ -32,8 +33,8 @@
                 <li class="menu-item"><a href="equipe.html" class="menu-formatacao-item"
                         style="color: #ffffff;">EQUIPE</a>
                 </li>
-                <li class="menu-item"><a href="projetos.html" class="menu-formatacao-item-ativo"
-                        style="color: #ffffff;">PROJETOS</a>
+                <li class="menu-item"><a href="conexões.html" class="menu-formatacao-item-ativo"
+                        style="color: #ffffff;">CONEXÕES</a>
                 </li>
             </ul>
         </nav>
@@ -48,83 +49,31 @@
         </div>
 
         <div class="corpo">
-            <nav class="listagem">
-                <ul>
-                    <li class="integrante ativo" id="mayanne">
-                        <span>Definição</span>
-                    </li>
-                    <li class="integrante" id="ariel">
-                        <span>Componentes</span>
-                    </li>
-                    <li class="integrante" id="cristilan">
-                        <span>Protótipos</span>
-                    </li>
-                </ul>
-            </nav>
 
             <div class="cartoes-integrantes">
-                <div class="cartao tipo-tecnico aberto" id="cartao-mayanne">
+                <div class="cartao aberto" id="cartao-desenvolvimento">
                     <div class="cartao-topo">
                         <div class="cartao-informacoes">
                             <div class="p1">
                                 <div class="texto">
-                                    <h3>OBJETIVO</h3>
-                                    <p>O projeto social "Sentinelas Verdes" tem como objetivo apoiar
-                                        comunidades que enfrentam dificuldades ambientais devido à
-                                        escassez de recursos e à falta de estudos na área. Utilizando
-                                        módulos de pH e CO2, o projeto coleta e disponibiliza dados públicos
-                                        para ajudar a enfrentar esses desafios. A iniciativa busca promover
-                                        o bem-estar, a saúde e a qualidade de vida, além de estimular o
-                                        desenvolvimento tecnológico e científico por meio de soluções
-                                        acessíveis e sustentáveis.</p>
+                                    <h3>FERRAMENTAS</h3>
+                                    <p>O site foi desenvolvido por meio de colaboração entre Design e Programação,
+                                        utilizando HTML, CSS e JavaScript. O processo incluiu planejamento visual,
+                                        estruturação técnica e testes de desempenho. Com design responsivo e interativo,
+                                        o site reflete a identidade da equipe e seu compromisso com a inovação,
+                                        profissionalismo e os valores da IRONHIDE, sendo mantido atualizado para
+                                        garantir relevância.</p>
                                 </div>
-                            </div>
-                            <div class="p1">
-                                <div class="texto">
-                                    <h3>PROBLEMÁTICA</h3>
-                                    <p>O monitoramento da qualidade do ar e da água em comunidades vulneráveis é
-                                        insuficiente, comprometendo tanto a saúde pública quanto o meio ambiente. A
-                                        ausência de ferramentas acessíveis para avaliar indicadores como pH e CO2
-                                        impede
-                                        a formulação de estratégias eficazes, evidenciando a importância de
-                                        desenvolver
-                                        soluções tecnológicas acessíveis e replicáveis para combater a degradação
-                                        ambiental.</p>
-                                </div>
-                            </div>
-                            <div class="p1">
-                                <div class="texto">
-                                    <h3>LOCAL DE REALIZAÇÃO</h3>
-                                    <p>A equipe pretende iniciar as pesquisas na cidade de Cascavel (CE), uma região
-                                        metropolitana
-                                        que enfrenta baixo investimento em iniciativas e estudos voltados ao meio
-                                        ambiente, um setor
-                                        afetado pela crescente industrialização local. Além disso, a presença de
-                                        três
-                                        integrantes da
-                                        equipe, Daniel, Erick e Thales, que residem na cidade, torna mais viável a
-                                        implementação do
-                                        projeto.</p>
-                                </div>
-                            </div>
-                            <div class="p1">
-                                <div class="texto-fim">
-                                    <h3>AÇÃO SOCIAL</h3>
-                                    <p>Todo o projeto será compartilhado em escolas públicas de Cascavel (CE) por
-                                        meio
-                                        de palestras sobre conscientização ambiental e preservação dos ecossistemas.
-                                        Consideramos essencial promover a conscientização, especialmente no ambiente
-                                        educacional, abordando os temas centrais do projeto. Também buscamos
-                                        difundir os
-                                        valores da FIRST, a importância da robótica e a educação STEM, gerando um
-                                        impacto positivo na comunidade escolar local.</p>
+                                <div class="imagens1">
+                                    <img src="./src/imagens/front-end.jpeg" height="250vh">
+                                    <img src="./src/imagens/design-site-canva.jpeg" height="250vh">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="cartao tipo-engenheiro ariel" id="cartao-ariel">
+                <div class="cartao" id="cartao-evolucao">
                     <div class="cartao-topo">
                         <div class="cartao-informacoes">
                             <div class="p1">
@@ -201,7 +150,7 @@
                     </div>
                 </div>
 
-                <div class="cartao tipo-engenheiro ariel" id="cartao-cristilan">
+                <div class="cartao" id="cartao-criadores">
                     <div class="cartao-topo">
                         <div class="cartao-informacoes">
                             <div class="p2">
@@ -239,16 +188,25 @@
                                         nosso site.
                                     </p>
                                 </div>
-                                <div class="imagens2">
-                                    <img src="./src/imagens/prototipo1.jpg" height="290vh">
-                                    <img src="./src/imagens/code-projeto.png" height="290vh">
-                                    <img src="./src/imagens/prototipo2.jpg" height="290vh">
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <nav class="listagem">
+                <ul>
+                    <li class="item ativo" id="desenvolvimento">
+                        <span>Desenvolvimento</span>
+                    </li>
+                    <li class="item" id="evolucao">
+                        <span>Evolução</span>
+                    </li>
+                    <li class="item" id="criadores">
+                        <span>Criadores</span>
+                    </li>
+                </ul>
+            </nav>
 
         </div>
 
@@ -260,6 +218,7 @@
     </main>
 
     <script src="./src/js/index.js"></script>
+    <script src="./src/js/scroll.js"></script>
 </body>
 
 </html>
