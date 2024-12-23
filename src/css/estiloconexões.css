@@ -15,7 +15,7 @@ main {
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 5px;
     z-index: 99;
     border: none;
     outline: none;
@@ -23,6 +23,7 @@ main {
     color: black;
     cursor: pointer;
     padding: 15px;
+    border: 1px solid black;
     border-radius: 10px;
     font-size: 18px;
 }
@@ -66,13 +67,14 @@ ul#menu-navegacao li a:hover {
 .icone-ironhide {
     display: flex;
     position: absolute;
-    left: 2vh;
+    left: 2vw;
     top: 3.5vh;
 }
 
 .escudo {
-    margin-top: -4vh;
+    margin-top: -4.5vh;
     margin-right: -0.5vw;
+    scale: 75%;
 }
 
 .numero-da-equipe {
@@ -112,11 +114,17 @@ ul#menu-navegacao li a:hover {
     text-align: justify;
     justify-content: center;
     align-items: center;
-    padding: 4vh 1.5vw;
+    padding: 1vh 1vw;
     border-radius: 10px;
     width: 60vw;
-    height: 50vh;
+    height: 55vh;
     margin: auto;
+}
+
+.cartao .cartao-informacoes img {
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .slideshow-container img {
@@ -128,6 +136,11 @@ ul#menu-navegacao li a:hover {
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slideshow-container.site img {
+    width: 22.5vw;
+    height: 27.5vh;
 }
 
 .slideshow-container img.active {

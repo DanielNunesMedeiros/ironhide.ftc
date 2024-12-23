@@ -1,6 +1,7 @@
 const images = [
     './src/imagens/tinker-co2.png',
     './src/imagens/design-site-canva.jpeg',
+    './src/imagens/stem.jpg',
     './src/imagens/site-beta2.jpeg',
     './src/imagens/code-projeto.png',
     './src/imagens/site-beta1.jpeg'

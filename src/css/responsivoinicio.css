@@ -1,0 +1,127 @@
+@media(max-width: 1000px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 5vw;
+        top: 8vh;
+        background-color: white;
+        border-radius: 10px;
+        opacity: 0;
+        transform: translateY(-20px);
+        animation: none;
+        z-index: 1000;
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideOut {
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        to {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+    }
+
+    .menu a {
+        color: black;
+    }
+
+    ul#menu-navegacao li a:hover {
+        background: none;
+    }
+
+    .menu-formatacao {
+        padding: 10px;
+    }
+
+    .menu-formatacao-item-ativo {
+        padding: 0 1vw;
+    }
+
+    .menu.show {
+        display: flex;
+        animation: slideIn 0.3s forwards;
+    }
+
+    .menu.hide {
+        animation: slideOut 0.3s forwards;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .escudo {
+        margin-top: -3.5vh;
+    }
+
+    .conteudo-principal {
+        margin-top: 0;
+    }
+
+    .texto-informacional {
+        margin-bottom: 5vh;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .definicao-FTC {
+        padding-bottom: 1vh;
+    }
+
+    .back-green {
+        margin-bottom: -1vh;
+    }
+
+    .sobre-a-equipe {
+        flex-direction: column;
+    }
+
+    .sobre-a-equipe img {
+        height: 80%;
+        width: 80%;
+    }
+
+    .projetos {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .carousel {
+        margin: auto;
+        padding: 20px;
+    }
+
+    .carousel img {
+        width: 80%;
+        height: 80%;
+    }
+    
+    button.prev {
+        left: 0;
+    }
+    
+    button.next {
+        right: 0;
+    }
+
+    .confira-aqui {
+        width: auto;
+    }
+}
