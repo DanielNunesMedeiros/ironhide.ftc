@@ -1,59 +1,29 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.menu');
-let isMenuOpen = false;
 
 function showMenu() {
-    if (!isMenuOpen) {
-        menu.style.display = 'flex';
-        menu.classList.add('show');
-        menu.classList.remove('hide');
-        isMenuOpen = true;
-    }
+    menu.classList.add('show');
 }
 
 function hideMenu() {
-    if (isMenuOpen) {
-        menu.classList.remove('show');
-        menu.classList.add('hide');
-
-        menu.addEventListener('animationend', () => {
-            if (menu.classList.contains('hide')) {
-                menu.style.display = 'none';
-                menu.classList.remove('hide');
-            }
-        }, { once: true });
-
-        isMenuOpen = false;
-    }
+    menu.classList.remove('show');
 }
 
-function handleInteractionStart(e) {
-    if (!isMenuOpen) {
-        showMenu();
-    }
-}
-
-function handleInteractionEnd(e) {
-    if (!menu.contains(e.relatedTarget) && !menuToggle.contains(e.relatedTarget)) {
-        hideMenu();
-    }
-}
-
-menuToggle.addEventListener('mouseenter', showMenu);
-menuToggle.addEventListener('mouseleave', (e) => {
-    if (!menu.contains(e.relatedTarget)) {
-        hideMenu();
-    }
+// Exibe o menu ao clicar no botão
+menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('show');
 });
-menu.addEventListener('mouseleave', (e) => {
-    if (!menuToggle.contains(e.relatedTarget)) {
+
+// Fecha o menu automaticamente quando o cursor sai do botão
+menuToggle.addEventListener('mouseleave', () => {
+    if (!menu.contains(event.relatedTarget)) { // Verifica se o cursor não está sobre o menu
         hideMenu();
     }
 });
 
-menuToggle.addEventListener('touchstart', handleInteractionStart);
-document.addEventListener('touchend', (e) => {
-    if (!menu.contains(e.target) && !menuToggle.contains(e.target)) {
+// Garante que o menu também feche quando o cursor sair do próprio menu
+menu.addEventListener('mouseleave', (event) => {
+    if (!menuToggle.contains(event.relatedTarget)) { // Verifica se o cursor não está sobre o botão
         hideMenu();
     }
 });

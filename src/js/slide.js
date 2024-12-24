@@ -25,8 +25,7 @@ const images1 = [
 
 const images2 = [
     './src/imagens/site-beta1.jpeg',
-    './src/imagens/front-end.jpeg',
-    './src/imagens/design-site-canva.jpeg'
+    './src/imagens/front-end.jpeg'
 ];
 
 // Inicialize cada slideshow
