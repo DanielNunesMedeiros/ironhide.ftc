@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/estilosentinelas.css">
+    <link rel="stylesheet" href="./src/css/responsivosentinelas.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,16 +21,17 @@
     <main>
         <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
 
-        <nav>
-            <ul id="menu-navegacao" class="menu" class="menu-formatacao">
-                <li class="menu-item"><a href="index.html" class="menu-formatacao-item"
-                        style="color: #ffffff;">INÍCIO</a>
+        <nav class="menu-container">
+            <button id="menu-toggle" class="menu-toggle">☰</button>
+            <ul id="menu-navegacao" class="menu menu-formatacao">
+                <li class="menu-item">
+                    <a href="index.html" class="menu-formatacao-item">INÍCIO</a>
                 </li>
-                <li class="menu-item"><a href="equipe.html" class="menu-formatacao-item"
-                        style="color: #ffffff;">EQUIPE</a>
+                <li class="menu-item">
+                    <a href="equipe.html" class="menu-formatacao-item">EQUIPE</a>
                 </li>
-                <li class="menu-item"><a href="conexões.html" class="menu-formatacao-item-ativo"
-                        style="color: #ffffff;">CONEXÕES</a>
+                <li class="menu-item">
+                    <a href="conexões.html" class="menu-formatacao-item-ativo">CONEXÕES</a>
                 </li>
             </ul>
         </nav>
@@ -238,7 +240,7 @@
                                         <h5><i>LED Branco: Nível adequado de CO</i></h5>
                                     </div>
                                     <div>
-                                        <img src="./src/imagens/code-projeto.png" height="260vh">
+                                        <img class="img" src="./src/imagens/code-projeto.png" height="260vh">
                                         <h5><i>Código do protótipo - Arduino IDE (Web)</i></h5>
                                     </div>
                                 </div>
@@ -267,6 +269,7 @@
     </main>
 
     <script src="./src/js/item.js"></script>
+    <script src="./src/js/menu.js"></script>
     <script src="./src/js/scroll.js"></script>
 </body>
 
