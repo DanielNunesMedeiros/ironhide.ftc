@@ -159,6 +159,7 @@ ul#menu-navegacao li a:hover {
     width: 80vw;
     height: 52vh;
     margin: auto;
+    border: 2px solid black;
 }
 
 .cartao .cartao-informacoes img {

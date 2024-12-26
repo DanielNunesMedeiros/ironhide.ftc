@@ -72,8 +72,8 @@
     }
 
     .p1 {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .p2 {
@@ -81,7 +81,7 @@
     }
 
     .imagens1 {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .imagens1 img {
@@ -90,7 +90,8 @@
     }
 
     .imagens2 {
-        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .imagens2 .img {

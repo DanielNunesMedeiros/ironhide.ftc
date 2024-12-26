@@ -152,6 +152,7 @@ ul#menu-navegacao li a:hover {
 
 .conteudo .conheca-a-ftc {
     justify-items: center;
+    padding: 10px;
 }
 
 .conteudo .pergunta {
@@ -300,6 +301,7 @@ ul#menu-navegacao li a:hover {
     padding: 15px;
     gap: 2.5vw;
     border-radius: 15px;
+    border: 2px solid black;
     width: 62.5vw;
     margin: auto;
 }

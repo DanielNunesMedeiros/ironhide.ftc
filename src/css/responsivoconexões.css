@@ -74,13 +74,22 @@
         color: #ffffff;
     }
 
+    .conheca {
+        margin-bottom: 5vh;
+    }
+
     .div-flex {
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .cartao-informacoes {
         flex-direction: column-reverse;
         min-height: min-content;
         min-width: min-content;
+    }
+
+    .texto {
+        padding: 10px;
     }
 }

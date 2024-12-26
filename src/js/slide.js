@@ -28,6 +28,12 @@ const images2 = [
     './src/imagens/front-end.jpeg'
 ];
 
-// Inicialize cada slideshow
+const images3 = [
+    './src/imagens/ment-cascavel2.jpeg',
+    './src/imagens/wcp.jpeg',
+    './src/imagens/ment-shark.png'
+];
+
 initializeSlideshow('slideshow1', images1);
 initializeSlideshow('slideshow2', images2);
+initializeSlideshow('slideshow3', images3);

@@ -1,4 +1,4 @@
-@media(max-width: 1000px) {
+@media(max-width: 970px) {
     .menu {
         display: none;
         flex-direction: column;
@@ -68,63 +68,16 @@
         margin-top: -3.5vh;
     }
 
-    .conteudo-principal {
-        margin-top: 0;
+    .corpo {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .texto-informacional {
-        margin-bottom: 5vh;
-    }
-
-    .conteudo {
+    .imagens1 {
         flex-wrap: wrap;
-        justify-content: center;
-        width: 90vw;
     }
 
-    .definicao-FTC {
-        padding-bottom: 1vh;
-    }
-
-    .back-green {
-        margin-bottom: -1vh;
-    }
-
-    .sobre-a-equipe {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .sobre-a-equipe img {
-        height: 80%;
-        width: 80%;
-    }
-
-    .projetos {
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 90vw;
-    }
-
-    .carousel {
-        margin: auto;
-        padding: 20px;
-    }
-
-    .carousel img {
-        width: 80%;
-        height: 80%;
-    }
-    
-    button.prev {
-        left: 0;
-    }
-    
-    button.next {
-        right: 0;
-    }
-
-    .confira-aqui {
-        width: auto;
+    .flex-wrap {
+        padding-top: 2vh;
     }
 }
