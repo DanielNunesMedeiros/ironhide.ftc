@@ -154,6 +154,7 @@ ul#menu-navegacao li a:hover {
 }
 
 .cartao img {
+    margin: auto;
     width: 100%;
     height: 100%;
 }
@@ -161,7 +162,6 @@ ul#menu-navegacao li a:hover {
 .cartao .cartao-topo {
     padding: 4vh 1.5vw 0;
     justify-items: left;
-    justify-content: center;
 }
 
 .cartao .funcao {
