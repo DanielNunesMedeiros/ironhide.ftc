@@ -134,6 +134,7 @@ ul#menu-navegacao li a:hover {
 
 .cartao-nav {
     display: flex;
+    flex-wrap: wrap;
     gap: 5vw;
     justify-content: center;
     padding-bottom: 3vh;

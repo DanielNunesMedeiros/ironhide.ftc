@@ -76,14 +76,6 @@
         color: #ffffff;
     }
 
-    .cartao-nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-    }
-
     .listagem {
         width: 360px;
     }

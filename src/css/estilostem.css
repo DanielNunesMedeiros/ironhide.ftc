@@ -186,18 +186,13 @@ ul#menu-navegacao li a:hover {
     padding-top: 10vh;
 }
 
-.corpo {
+.cartoes-integrantes {
     padding: 10px;
-    margin: auto;
 }
 
 .cartao {
     border-radius: 10px;
     background-color: #36aa3f;
-}
-
-.cartao.aberto {
-    display: block;
 }
 
 .cartao .cartao-topo {

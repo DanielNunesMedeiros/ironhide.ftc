@@ -247,7 +247,7 @@ tr:hover {
     border-radius: inherit;
     opacity: 0;
     transition: 0.4s ease-in-out;
-    z-index: 3;
+    z-index: 2;
 }
 
 .card:hover img {
@@ -268,7 +268,7 @@ tr:hover {
     text-align: center;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-    z-index: 2;
+    z-index: 3;
 }
 
 .content h2 {

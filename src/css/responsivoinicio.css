@@ -100,6 +100,10 @@
         width: 80%;
     }
 
+    .img-nav {
+        margin-bottom: 4vh;
+    }
+
     .projetos {
         flex-wrap: wrap;
         justify-content: center;

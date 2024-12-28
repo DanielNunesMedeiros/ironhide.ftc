@@ -92,4 +92,12 @@
     .texto {
         padding: 10px;
     }
+
+    .slideshow-container {
+        padding-top: 3vh;
+    }
+
+    .img-stem {
+        margin-top: 3vh;
+    }
 }
