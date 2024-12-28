@@ -142,6 +142,8 @@ ul#menu-navegacao li a:hover {
 
 .cartao {
     display: none;
+    margin-left: 3vw;
+    margin-right: 3vw;
     max-width: 50vh;
     border-radius: 10px;
     background-color: rgb(16, 16, 16, 0.9);
