@@ -160,7 +160,7 @@ ul#menu-navegacao li a:hover {
 
 .cartao .cartao-topo {
     padding: 4vh 1.5vw 0;
-    justify-items: left;
+    justify-items: center;
 }
 
 .cartao .funcao {
