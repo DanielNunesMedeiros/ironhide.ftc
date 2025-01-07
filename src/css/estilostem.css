@@ -36,7 +36,7 @@ main {
     display: flex;
     position: absolute;
     right: 2vw;
-    top: 3.25vh;
+    top: 5vh;
     justify-content: right;
     gap: 1.5vw;
 }
@@ -167,13 +167,8 @@ ul#menu-navegacao li a:hover {
     display: flex;
     position: absolute;
     left: 2vw;
-    top: 4vh;
-}
-
-.escudo {
-    margin-top: -4.5vh;
-    margin-right: -0.5vw;
-    scale: 75%;
+    top: 1.5vh;
+    align-items: center;
 }
 
 .numero-da-equipe {
