@@ -1,29 +1,31 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.menu');
+const remove = document.querySelector('.remove');
+const overlay = document.querySelector('#menu-overlay');
 
-function showMenu() {
-    menu.classList.add('show');
-}
-
-function hideMenu() {
-    menu.classList.remove('show');
-}
-
-// Exibe o menu ao clicar no botão
 menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('show');
+    menu.classList.remove('hide');
+    menu.classList.add('show');
+    overlay.classList.add('show');
+    menu.style.display = 'block';
 });
 
-// Fecha o menu automaticamente quando o cursor sai do botão
-menuToggle.addEventListener('mouseleave', () => {
-    if (!menu.contains(event.relatedTarget)) { // Verifica se o cursor não está sobre o menu
-        hideMenu();
-    }
+remove.addEventListener('click', () => {
+    menu.classList.remove('show');
+    menu.classList.add('hide');
+    overlay.classList.remove('show');
+
+    setTimeout(() => {
+        menu.style.display = 'none';
+    }, 500);
 });
 
-// Garante que o menu também feche quando o cursor sair do próprio menu
-menu.addEventListener('mouseleave', (event) => {
-    if (!menuToggle.contains(event.relatedTarget)) { // Verifica se o cursor não está sobre o botão
-        hideMenu();
-    }
+overlay.addEventListener('click', () => {
+    menu.classList.remove('show');
+    menu.classList.add('hide');
+    overlay.classList.remove('show');
+
+    setTimeout(() => {
+        menu.style.display = 'none';
+    }, 500);
 });

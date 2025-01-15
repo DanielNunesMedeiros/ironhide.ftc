@@ -1,0 +1,265 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    text-align: center;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 5px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+}
+  
+#myBtn:hover {
+    background-color: #555;
+}
+
+.menu-principal {
+    display: flex;
+    position: absolute;
+    top: 0;
+    padding: 5px 10px;
+    align-items: center;
+}
+
+.icone-logo {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    color: #36aa3f;
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: #36aa3f;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.menu-toggle:hover {
+    background: none;
+    transform: rotate(-90deg);
+}
+
+.menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.menu-overlay.show {
+    display: block;
+    opacity: 1;
+}
+
+.menu {
+    display: none;
+    color: #36aa3f;
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-color: #ffffff;
+    text-align: left;
+    transform: translateX(100%);
+    z-index: 3;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@media(max-width: 700px) {
+    .menu {
+        width: 100%;
+    }
+}
+
+.menu-item {
+    margin-bottom: 1vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    height: 7vh;
+}
+
+.menu-item:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.menu a {
+    color: #36aa3f;
+    text-decoration: none;
+}
+
+.menu.show {
+    display: block;
+    animation-name: slideIn;
+}
+
+.menu.hide {
+    animation-name: slideOut;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 5vh;
+    font-size: 25px;
+}
+
+.remove {
+    border: none;
+    background: none;
+    color: #36aa3f;
+    font-size: 20px;
+}
+
+.remove:hover {
+    cursor: pointer;
+    background: none;
+}
+
+.icone-ironhide {
+    display: flex;
+    left: 2vw;
+    top: 1.5vh;
+    align-items: center;
+}
+
+.numero-da-equipe {
+    color: #36aa3f;
+}
+
+.title {
+    font-size: 120%;
+    justify-content: center;
+    padding-top: 125px;
+}
+
+.cartoes-integrantes {
+    padding: 10px;
+}
+
+.cartao {
+    border-radius: 10px;
+    background-color: #36aa3f;
+}
+
+.cartao .cartao-topo {
+    padding: 20px;
+}
+
+.cartao .cartao-informacoes {
+    background-color: #ffffff;
+    color: black;
+    text-align: justify;
+    padding: 5vh 1.5vw;
+    border-radius: 10px;
+}
+
+.cartao .cartao-informacoes h3 {
+    font-size: 20px;
+    margin-bottom: 1.2vh;
+    border-bottom: 1px solid #6b727a;
+}
+
+.texto {
+    margin-bottom: 3vh;
+}
+
+table {
+    border: 2px solid black;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.center {
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-align: center;
+}
+
+td {
+    font-size: 14px;
+    text-align: justify;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+@media(max-width: 820px) {
+    .remove-column {
+        display: none;
+    }
+}
