@@ -40,13 +40,6 @@ main {
     align-items: center;
 }
 
-.icone-logo {
-    display: flex;
-    align-items: center;
-    gap: 1vw;
-    color: #36aa3f;
-}
-
 .menu-toggle {
     position: absolute;
     top: 25px;
@@ -280,10 +273,6 @@ main {
     text-decoration: none;
 }
 
-.confira-aqui.sentinelas {
-    margin-top: 70px;
-}
-
 @media(max-width: 1000px) {
     .conheca {
         margin-bottom: 5vh;
@@ -300,9 +289,5 @@ main {
 
     .p1 {
         padding: 10px;
-    }
-
-    .confira-aqui.sentinelas {
-        margin-top: 0;
     }
 }

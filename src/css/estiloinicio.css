@@ -40,13 +40,6 @@ main {
     align-items: center;
 }
 
-.icone-logo {
-    display: flex;
-    align-items: center;
-    gap: 1vw;
-    color: #36aa3f;
-}
-
 .menu-toggle {
     position: absolute;
     top: 25px;

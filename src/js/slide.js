@@ -31,7 +31,8 @@ const images2 = [
 const images3 = [
     './src/imagens/ment-cascavel2.jpeg',
     './src/imagens/wcp.jpeg',
-    './src/imagens/ment-shark.png'
+    './src/imagens/ment-shark.png',
+    './src/imagens/ment-parangaba-2.jpg'
 ];
 
 initializeSlideshow('slideshow1', images1);
