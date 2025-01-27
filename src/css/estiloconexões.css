@@ -100,7 +100,7 @@ main {
     }
 }
 
-.menu-item {
+.menu-item a {
     margin-bottom: 1vh;
     display: flex;
     justify-content: space-between;
@@ -108,15 +108,12 @@ main {
     padding: 20px;
     font-size: 20px;
     height: 7vh;
-}
-
-.menu-item:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-.menu a {
     color: #36aa3f;
     text-decoration: none;
+}
+
+.menu-item a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .menu.show {
@@ -256,21 +253,19 @@ main {
     gap: 1vh;
 }
 
-.confira-aqui {
+.confira-aqui{
     background-color: #36aa3f;
+    color: #ffffff;
     padding: 15px;
     text-align: center;
     border-radius: 50px;
     cursor: pointer;
     margin: auto;
+    text-decoration: none;
 }
 
 .confira-aqui:hover {
     transform: scale(1.05);
-}
-
-.confira-aqui a {
-    text-decoration: none;
 }
 
 @media(max-width: 1000px) {
