@@ -227,6 +227,15 @@ main {
     border-bottom: 1px solid #6b727a;
 }
 
+.h1-title {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.h1-title.nacional {
+    padding-top: 25px;
+}
+
 .p1 {
     margin-bottom: 7vh;
     display: flex;
